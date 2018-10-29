@@ -1,4 +1,7 @@
 function form() {
+
+    let  close = document.querySelector('.popup-close');
+    
     let message = {
         loading: 'Загрузка',
         success: 'Спасибо! Скоро мы с Вами свяжемся!',
@@ -14,7 +17,7 @@ function form() {
 
     function sendForm(elem) {
        
-        elem.addEventListener('submit', (event) => {
+            elem.addEventListener('submit', (event) => {
             event.preventDefault();
             elem.appendChild(statusMessage);
 
