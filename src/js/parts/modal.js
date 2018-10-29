@@ -8,7 +8,7 @@ function modal() {
             this.classList.add('more-splash');
         });
 
-        close.addEventListener('click', () => {
+        close.addEventListener('click', function ()  {
             overlay.style.display = 'none';
             this.classList.remove('more-splash');
             document.body.style.overflow = '';
@@ -18,7 +18,7 @@ function modal() {
     let content = document.querySelector('.content');
 
 
-    content.addEventListener('click', (event) => {
+    content.addEventListener('click', function (event) {
         if (event.target && event.target.classList.contains('description-btn')) {
             overlay.style.display = 'block';
             this.classList.add('more-splash');

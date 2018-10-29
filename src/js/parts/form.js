@@ -67,7 +67,7 @@ function form() {
                 .then(clearInput)
         });
 
-        close.addEventListener('click', () => {
+        close.addEventListener('click', function () {
             elem.removeChild(statusMessage);
         });
     }
