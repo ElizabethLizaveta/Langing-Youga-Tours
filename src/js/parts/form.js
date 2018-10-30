@@ -15,6 +15,18 @@ function form() {
         statusMessage.classList.add('status');
         statusMessage.classList.add('formAlert');
 
+
+    function checkinput (input) {
+            input.addEventListener('keyup', () => {
+                let value = input.value;
+                value = value.replace(/[\D\s\._\-]+/g, "");
+                value = value ? parseInt(value, 10) : "";
+                input.value = value;
+            });
+        } 
+
+    checkinput (persons);
+
     function sendForm(elem) {
        
             elem.addEventListener('submit', (event) => {

@@ -42,16 +42,16 @@ function calc() {
 
         
         function checkinput (input) {
-            input.addEventListener('keyup', () => {
+            input.addEventListener('keyup', function () {
                 let value = input.value;
-                let forbid = /[d.+aA-zZ]/;
-                if (forbid.test(input.value)) value = value.replace(forbid, '');
+                value = value.replace(/[\D\s\._\-]+/, "");
+                value = value ? parseInt(value, 10 ) : 0;
                 input.value = value;
             });
         }
 
         checkinput (persons);
-        checkinput(restDays);
+        checkinput(restDays); 
 }
 
 export {calc};
