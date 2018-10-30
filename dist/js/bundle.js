@@ -110,6 +110,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/parts/formvalid.js":
+/*!***********************************!*\
+  !*** ./src/js/parts/formvalid.js ***!
+  \***********************************/
+/*! exports provided: formvalid */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"formvalid\", function() { return formvalid; });\nfunction formvalid() {\n\n    let email = document.querySelector('form input[name=\"email\"]'),\n        tel = document.querySelector('form input[name=\"tel\"]'),\n        btn = document.querySelector('form button[type=\"submit\"]');\n\n    function validateEmail(email) {\n        email.addEventListener('change', function () {\n            if (/^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$/.test(email.value)) {\n                return (true)\n            }\n           alert(\"Вы указали некорректный адрес\");\n           email.value = \"\"; \n        });\n    }\n\n    function validateTel(tel) {\n        tel.addEventListener('keyup', function () {\n            if (/^[0-9+]*$/.test(tel.value))\n            {\n              return (true)\n            }\n            alert(\"Вы указали некорректный телефон\");\n            tel.value = \"\";\n        });\n    }\n\n    validateEmail(email);\n    validateTel(tel);\n}\n\n\n\n//# sourceURL=webpack:///./src/js/parts/formvalid.js?");
+
+/***/ }),
+
 /***/ "./src/js/parts/modal.js":
 /*!*******************************!*\
   !*** ./src/js/parts/modal.js ***!
@@ -166,7 +178,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _parts_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/tabs */ \"./src/js/parts/tabs.js\");\n/* harmony import */ var _parts_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/modal */ \"./src/js/parts/modal.js\");\n/* harmony import */ var _parts_timer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/timer */ \"./src/js/parts/timer.js\");\n/* harmony import */ var _parts_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parts/slider */ \"./src/js/parts/slider.js\");\n/* harmony import */ var _parts_calc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./parts/calc */ \"./src/js/parts/calc.js\");\n/* harmony import */ var _parts_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./parts/form */ \"./src/js/parts/form.js\");\n \n \n \n \n \n \n \n\nwindow.addEventListener('DOMContentLoaded', function () {\n\n    'use strict';\n     \n     Object(_parts_tabs__WEBPACK_IMPORTED_MODULE_0__[\"tabs\"])();\n     Object(_parts_modal__WEBPACK_IMPORTED_MODULE_1__[\"modal\"])();\n     Object(_parts_timer__WEBPACK_IMPORTED_MODULE_2__[\"timer\"])();\n     Object(_parts_slider__WEBPACK_IMPORTED_MODULE_3__[\"slider\"])();\n     Object(_parts_calc__WEBPACK_IMPORTED_MODULE_4__[\"calc\"])();\n     Object(_parts_form__WEBPACK_IMPORTED_MODULE_5__[\"form\"])();\n\n});\n\n \n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _parts_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parts/tabs */ \"./src/js/parts/tabs.js\");\n/* harmony import */ var _parts_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parts/modal */ \"./src/js/parts/modal.js\");\n/* harmony import */ var _parts_timer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./parts/timer */ \"./src/js/parts/timer.js\");\n/* harmony import */ var _parts_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parts/slider */ \"./src/js/parts/slider.js\");\n/* harmony import */ var _parts_calc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./parts/calc */ \"./src/js/parts/calc.js\");\n/* harmony import */ var _parts_formvalid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./parts/formvalid */ \"./src/js/parts/formvalid.js\");\n/* harmony import */ var _parts_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./parts/form */ \"./src/js/parts/form.js\");\n \n \n \n \n \n \n \n \n\nwindow.addEventListener('DOMContentLoaded', function () {\n\n    'use strict';\n     \n     Object(_parts_tabs__WEBPACK_IMPORTED_MODULE_0__[\"tabs\"])();\n     Object(_parts_modal__WEBPACK_IMPORTED_MODULE_1__[\"modal\"])();\n     Object(_parts_timer__WEBPACK_IMPORTED_MODULE_2__[\"timer\"])();\n     Object(_parts_slider__WEBPACK_IMPORTED_MODULE_3__[\"slider\"])();\n     Object(_parts_calc__WEBPACK_IMPORTED_MODULE_4__[\"calc\"])();\n     Object(_parts_formvalid__WEBPACK_IMPORTED_MODULE_5__[\"formvalid\"])();\n     Object(_parts_form__WEBPACK_IMPORTED_MODULE_6__[\"form\"])();\n\n});\n\n \n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 

@@ -3,6 +3,7 @@
  import {timer} from './parts/timer';
  import {slider} from './parts/slider';
  import {calc} from './parts/calc';
+ import {formvalid} from './parts/formvalid';
  import {form} from './parts/form';
  
 
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
      timer();
      slider();
      calc();
+     formvalid();
      form();
 
 });
