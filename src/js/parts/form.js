@@ -65,11 +65,7 @@ function form() {
                 .then(()=> statusMessage.innerHTML = message.success)
                 .catch(()=> statusMessage.innerHTML = message.failure)
                 .then(clearInput)
-        });
-
-        close.addEventListener('click', () => {
-            elem.removeChild(statusMessage);
-        });
+        });  
     }
 
     sendForm(form);
